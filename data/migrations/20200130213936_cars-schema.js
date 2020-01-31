@@ -6,7 +6,7 @@ exports.up = function(knex) {
       tbl.text('make', 128).unique().notNullable();
       tbl.text('model', 128).unique().notNullable();
       tbl.decimal('mileage').notNullable();
-      tbl.text('type', 128).unique();
+      tbl.text('engin type', 128);
       tbl.text('status', 128).unique();
   })
 };
